@@ -42,7 +42,7 @@ You can follow steps described in the official docs: https://docs.snowflake.com/
 ### 3. Import Notebook and Install Packages
 - Click on Projects -> Notebook
 - Import the notebooks located in the `/notebooks` folder by using the import button on the top right.
-- As you import, select the database `SUMMIT_EURO2024`, the schema `PUBLIC` and the `SUMMIT_WH` created from the `setup.sql` script.
+- As you import, select the database `SUMMIT_EURO2024`, the schema `PUBLIC` and the `SUMMIT_EURO2024_WH` created from the `setup.sql` script.
 - Once the notebook has been imported, include these packages by using the "Packages" button on the top right:
 
   - matplotlib
