@@ -18,20 +18,19 @@ Estimated HOL Preparation Time: 10 mins
 Before you begin, ensure you have the following:
 
 - Access to the HOL GitHub Repository: [Summit 2024 HOL Repository](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml).
-- An active Snowflake Trial Account with ACCOUNTADMIN role granted:
-  - We recommend creating the trial in **AWS US West 2**
-  - Do have multiple users running this in the same Snowflake account.
+- An active Snowflake Trial Account in **AWS US West 2**
+- NOTE - We do not recommend having multiple users running this in the same Snowflake account.
 - Clone / download the whole GitHub Repo locally. During the Setup, you'll need the `dataset` folder and the `notebooks` folder to finalize the HOL pre-work.
 
 ### 1. Setup Objects (DB, Schema, Tables, Stages)
 
-Execute on your account the `setup.sql` script [(click here)](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml/blob/main/setup/setup.sql) available in this repository.
+Execute on your account the `setup.sql` [script](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml/blob/main/setup/setup.sql) available in this repository.
 
 ### 2. Push Dataset into Stages
 
 Ensure to push the dataset into Snowflake stages prior to the on-site session, as the internet connection might be limited at the venue. 
 
-Below are the steps to push data via the UI (alternatively, you can use `PUT` command via command line: https://docs.snowflake.com/en/sql-reference/sql/put)
+Below are the steps to push data via the UI (alternatively, you can use `PUT` command via [command line](https://docs.snowflake.com/en/sql-reference/sql/put)
 
 1. Navigate to Data -> DB `EURO2024`, Schema: `Public` -> Stage: `DATA`.
 2. Use the warehouse created to list files on the stage.
@@ -39,7 +38,7 @@ Below are the steps to push data via the UI (alternatively, you can use `PUT` co
 4. Select dataset files you downloaded from this GitHub Repo and push them in the stage folder. Click on the button upload. 
 ![Step](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml/blob/main/images/upload_dataset_1.png)
 
-You can follow steps described in the official docs: https://docs.snowflake.com/en/user-guide/data-load-local-file-system-stage-ui
+You can follow steps described in the [official docs](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-stage-ui)
 
 ### 3. Import Notebook and Install Packages
 - Click on Projects -> Notebook
@@ -47,9 +46,8 @@ You can follow steps described in the official docs: https://docs.snowflake.com/
 - As you import, select the database `EURO2024`, the schema `PUBLIC` and the `EURO2024_WH` created from the `setup.sql` script.
 - Once the notebook has been imported, include these packages by using the "Packages" button on the top right:
 
-  - snowflake-ml-python
-  - snowflake-snowpark-python
-  - xgboost
+  - snowflake-ml-python 1.15.0
+  - fastparquet 2023.8.0
 
 Installing them at a later stage  might refresh your notebook session and erase cache.
 
