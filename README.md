@@ -5,10 +5,10 @@ Join this introductory session on using Snowpark ML to build out an end-to-end p
 
 ## Repository Contents
 
-- **setup**: Contains prerequisites for the session.
-- **dataset**: Data to be uploaded to the Snowflake account before the session.
-- **images**: Images displayed in the readme and setup scripts.
-- **notebooks**: 5 notebooks to run sequentially that cover the various steps.
+- **`setup`**: Contains prerequisites for the session.
+- **`dataset`**: Data to be uploaded to the Snowflake account before the session.
+- **`images`**: Images displayed in the readme and setup scripts.
+- **`notebooks`**: 5 notebooks to run sequentially that cover the various steps.
 
 This guide will help you to perform all prerequites to successfully follow the HOL session. 
 
@@ -18,7 +18,9 @@ Estimated HOL Preparation Time: 10 mins
 Before you begin, ensure you have the following:
 
 - Access to the HOL GitHub Repository: [Summit 2024 HOL Repository](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml).
-- An active Snowflake Trial Account with ACCOUNTADMIN role granted (at present we do not recommend multiple users running this in the same Snowflake account).
+- An active Snowflake Trial Account with ACCOUNTADMIN role granted:
+  - We recommend creating the trial in **AWS US West 2**
+  - Do have multiple users running this in the same Snowflake account.
 - Clone / download the whole GitHub Repo locally. During the Setup, you'll need the `dataset` folder and the `notebooks` folder to finalize the HOL pre-work.
 
 ### 1. Setup Objects (DB, Schema, Tables, Stages)
