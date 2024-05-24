@@ -44,11 +44,9 @@ You can follow steps described in the [official docs](https://docs.snowflake.com
 - Click on Projects -> Notebook
 - Import the notebooks located in the `/notebooks` folder by using the import button on the top right.
 - As you import, select the database `EURO2024`, the schema `PUBLIC` and the `EURO2024_WH` created from the `setup.sql` script.
-- Once the notebook has been imported, include these packages by using the "Packages" button on the top right:
+- For notebooks (3) and (5), once they are imported add these packages by using the "Packages" dropwdown on the top right:
 
-  - snowflake-ml-python 1.15.0
+  - snowflake-ml-python 1.5.0
   - fastparquet 2023.8.0
-
-Installing them at a later stage  might refresh your notebook session and erase cache.
 
 ![Step](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml/blob/main/images/installed_packages.png)
