@@ -8,7 +8,8 @@ Join this introductory session on using Snowpark ML to build out an end-to-end p
 - **`setup`**: Contains prerequisites for the session.
 - **`dataset`**: Data to be uploaded to the Snowflake account before the session.
 - **`images`**: Images displayed in the readme and setup scripts.
-- **`notebooks`**: 5 notebooks to run sequentially that cover the various steps.
+- **`notebooks_snowflake`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Snowflake Notebooks
+- **`notebooks_hex`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Hex Notebooks (with some minor edits they will also work with standard Jupyter)
 
 This guide will help you to perform all prerequites to successfully follow the HOL session. 
 
@@ -17,8 +18,12 @@ Estimated HOL Preparation Time: 10 mins
 
 Before you begin, ensure you have the following:
 
-- Access to the HOL GitHub Repository: [Summit 2024 HOL Repository](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml).
-- An active Snowflake Trial Account in **AWS US West 2**
+* Access to the HOL GitHub Repository: [Summit 2024 HOL Repository](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml).
+* An active Snowflake Trial Account in **AWS US West 2**
+* Depending on which notebook environment you wish to use;
+  * The above Snowflake Account with Snowflake Notebooks, or
+  * A [Hex](https://hex.tech/) Account
+
 - NOTE - We do not recommend having multiple users running this in the same Snowflake account.
 - Clone / download the whole GitHub Repo locally. During the Setup, you'll need the `dataset` folder and the `notebooks` folder to finalize the HOL pre-work.
 
@@ -41,6 +46,11 @@ Below are the steps to push data via the UI (alternatively, you can use `PUT` co
 You can follow steps described in the [official docs](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-stage-ui)
 
 ### 3. Import Notebook and Install Packages
+
+**For Hex Notebooks:**
+- Please follow [these steps](https://learn.hex.tech/docs/explore-data/projects/import-export) for importing notebooks.
+
+**For Snowflake Notebooks:**
 - Click on Projects -> Notebook
 - Import the notebooks located in the `/notebooks` folder by using the import button on the top right.
 - As you import, select the database `EURO2024`, the schema `PUBLIC` and the `EURO2024_WH` created from the `setup.sql` script.
