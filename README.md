@@ -60,3 +60,7 @@ You can follow steps described in the [official docs](https://docs.snowflake.com
   - fastparquet 2023.8.0
 
 ![Step](https://github.com/Snowflake-Labs/sfguide-sporting-events-prediction-using-snowpark-ml/blob/main/images/installed_packages.png)
+
+### 4. Run the Notebooks
+
+Run through Notebooks 1 through 5 and see who the predicted winner is of Euro 2024 ⚽🏆
