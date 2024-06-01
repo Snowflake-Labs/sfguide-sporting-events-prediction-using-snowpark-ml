@@ -8,8 +8,8 @@ Join this introductory session on using Snowpark ML to build out an end-to-end p
 - **`setup`**: Contains prerequisites for the session.
 - **`dataset`**: Data to be uploaded to the Snowflake account before the session.
 - **`images`**: Images displayed in the readme and setup scripts.
-- **`notebooks_snowflake`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Snowflake Notebooks
-- **`notebooks_hex`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Hex Notebooks (with some minor edits they will also work with standard Jupyter)
+- **`notebooks_snowflake`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Snowflake Notebooks.
+- **`notebooks_hex`**: 5 notebooks to run sequentially that cover the various steps that are compatible with Hex Notebooks (with some minor edits they will also work with standard Jupyter notebooks).
 
 This guide will help you to perform all prerequites to successfully follow the HOL session. 
 
@@ -22,7 +22,7 @@ Before you begin, ensure you have the following:
 * An active Snowflake Trial Account in **AWS US West 2**
 * Depending on which notebook environment you wish to use;
   * The above Snowflake Account with Snowflake Notebooks, or
-  * A [Hex](https://hex.tech/) Account
+  * A [Hex](https://hex.tech/) Account.
 
 - NOTE - We do not recommend having multiple users running this in the same Snowflake account.
 - Clone / download the whole GitHub Repo locally. During the Setup, you'll need the `dataset` folder and the `notebooks` folder to finalize the HOL pre-work.
